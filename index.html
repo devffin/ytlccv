@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="YTLCCV turns YouTube live chat commands into actions on a VirtualBox-powered virtual machine." />
+    <title>YTLCCV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">YTLCCV</div>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="features.html">Features</a>
+          <a href="docs.html">Docs</a>
+        </nav>
+        <a class="button button-primary" href="https://github.com/devffin/youtube-live-chat-commands-to-virtualbox-control" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="container intro-block">
+        <p class="eyebrow">YouTube live chat automation</p>
+        <h1>Turn chat commands into VM actions.</h1>
+        <p class="lead">
+          YTLCCV is a lightweight project that listens to YouTube live chat and translates commands into actions on a VirtualBox-controlled machine.
+        </p>
+      </section>
+
+      <section class="container card-grid" aria-label="Project overview">
+        <article class="feature-card">
+          <h3>Project philosophy</h3>
+          <p>
+            The idea is simple: when a stream audience sends a command, the system detects it and triggers a precise action on a VM.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Why it matters</h3>
+          <p>
+            Live chat is one of the strongest engagement points on streaming platforms, and YTLCCV turns that interaction into real system behavior.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Core inspiration</h3>
+          <p>
+            The project centers on the idea of community-driven control: a stream becomes a command center and the VM acts as a responder.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Current state</h3>
+          <p>
+            The repository is still in alpha, and the project is intentionally open to rework, experimentation, and community improvements.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> YTLCCV</p>
+        <a href="https://github.com/devffin/youtube-live-chat-commands-to-virtualbox-control" target="_blank" rel="noreferrer">Repository</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
