@@ -99,10 +99,22 @@ img {
   transform: translateY(-1px);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .button-primary {
   background: var(--primary);
   color: #fff;
   box-shadow: 0 8px 18px rgba(31, 111, 235, 0.15);
+}
+
+.button-secondary {
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--text);
+  border-color: var(--line);
 }
 
 .page-shell {
