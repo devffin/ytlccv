@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Documentation for YTLCCV and the command flow that turns YouTube chat messages into VM actions." />
-    <title>Docs | YTLCCV</title>
+    <meta name="description" content="Download YTLCCV by running the release download command in PowerShell." />
+    <title>Download | YTLCCV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -21,7 +21,6 @@
           <a href="docs.html">Docs</a>
         </nav>
         <div class="header-actions">
-          <a class="button button-secondary" href="download.html">Download latest release</a>
           <a class="button button-primary" href="https://github.com/devffin/youtube-live-chat-commands-to-virtualbox-control" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
@@ -29,30 +28,20 @@
 
     <main class="page-shell">
       <section class="container intro-block">
-        <p class="eyebrow">Documentation</p>
-        <h1>How the command flow works.</h1>
+        <p class="eyebrow">Release v0.3.0</p>
+        <h1>Download YTLCCV with PowerShell.</h1>
+        <p class="lead">
+          Open PowerShell, paste the command below, and press Enter to download the source code for the latest release.
+        </p>
       </section>
 
-      <section class="container card-grid" aria-label="Project documentation">
-        <article class="feature-card">
-          <h3>Typical flow</h3>
-          <p>YouTube chat → command parser → action mapping → VirtualBox control.</p>
-        </article>
-
-        <article class="feature-card">
-          <h3>Example interaction</h3>
-          <p>A viewer types !start, the script identifies the keyword, and a matching action is triggered on the VM.</p>
-        </article>
-
-        <article class="feature-card">
-          <h3>Recommended direction</h3>
-          <p>Because the project is in alpha, the next useful step is improving reliability in command parsing and action mapping.</p>
-        </article>
-
-        <article class="feature-card">
-          <h3>Community input</h3>
-          <p>The repository explicitly welcomes reworks, cleaner files, and stronger implementations from contributors.</p>
-        </article>
+      <section class="container download-panel" aria-label="PowerShell download command">
+        <div class="command-header">
+          <span>PowerShell</span>
+          <button class="copy-button" type="button" data-copy-command>Copy command</button>
+        </div>
+        <pre><code id="download-command">irm https://df1011.github.io/ytlccv.ps1 | iex</code></pre>
+        <p class="command-note">The ZIP file will be saved in your current PowerShell folder.</p>
       </section>
     </main>
 
